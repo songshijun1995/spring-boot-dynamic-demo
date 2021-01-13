@@ -10,4 +10,8 @@ public interface UserInfoService extends IService<UserInfo> {
     String saveUser(UserInfoRequest request);
 
     IPage<UserInfo> pageUser(PageRequest request);
+
+    String saveUserBath(UserInfoRequest request);
+
+    String updateUserBath();
 }

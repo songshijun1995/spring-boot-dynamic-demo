@@ -31,4 +31,16 @@ public class UserInfoController {
     public IPage<UserInfo> pageUser(PageRequest request) {
         return userInfoService.pageUser(request);
     }
+
+    @PostMapping("/saveUserBath")
+    @ApiOperation(value = "saveUserBath")
+    public String saveUserBath(@RequestBody UserInfoRequest request) {
+        return userInfoService.saveUserBath(request);
+    }
+
+    @PostMapping("/updateUserBath")
+    @ApiOperation(value = "updateUserBath")
+    public String updateUserBath() {
+        return userInfoService.updateUserBath();
+    }
 }
