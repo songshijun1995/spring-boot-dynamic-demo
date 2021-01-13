@@ -28,7 +28,7 @@ public class MyBatisPlusConfig {
     }
 
     @Bean
-    public CustomizedSqlInjector easySqlInjector() {
+    public CustomizedSqlInjector customizedSqlInjector() {
         return new CustomizedSqlInjector();
     }
 }
